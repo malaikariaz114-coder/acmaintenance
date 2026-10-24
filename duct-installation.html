@@ -12,7 +12,8 @@
 <style>
 :root{--teal:#1D5C67;--teal2:#174C55;--deep:#0E343B;--org:#F28C1B;--org2:#DD7A0C;--soft:#F1F6F7;--ink:#111;--line:#DCE8EA;--r:18px}
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{overflow-x:hidden}
 body{font-family:'El Messiri',system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.75;font-size:17px;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
 img,svg{display:block}
@@ -194,6 +195,7 @@ footer p{font-size:15.5px;margin-top:14px;max-width:300px;color:#D6E5E8}
 @media (max-width:1020px){
   nav{display:none}
   .hgrid,.about{grid-template-columns:1fr;gap:40px}
+  .aimg{order:2;justify-self:center}
   .feat .wrap{grid-template-columns:repeat(2,1fr);row-gap:16px}
   .feat div.f:nth-child(3){border:0}
   .wgrid,.pgrid,.sgrid,.ogrid{grid-template-columns:repeat(2,1fr)}
@@ -219,7 +221,9 @@ footer p{font-size:15.5px;margin-top:14px;max-width:300px;color:#D6E5E8}
   .feat .fi{width:42px;height:42px}
   .feat b{font-size:14.5px}
   .feat span{display:none}
-  .aimg{max-width:100%}
+  .aimg{max-width:100%;order:2}
+  .about .row .btn{flex:1 1 100%}
+  .aimg .ab{inset-inline-end:8px}
   .aimg img{aspect-ratio:4/3}
   .aimg .ab{top:-12px;inset-inline-end:-6px;padding:10px 12px}
   .apts{grid-template-columns:1fr}
