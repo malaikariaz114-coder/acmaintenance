@@ -117,8 +117,11 @@ header .btn{padding:11px 20px;font-size:15px}
 /* problems */
 .probs{background:var(--soft)}
 .pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.p{background:#fff;border-radius:var(--r);padding:24px 22px;position:relative;border:1px solid var(--line)}
-.p .pn{position:absolute;top:-14px;inset-inline-start:22px;background:var(--teal);color:#fff;font-weight:700;font-size:14px;border-radius:8px;padding:2px 10px}
+.p{background:#fff;border-radius:var(--r);padding:0;position:relative;border:1px solid var(--line);overflow:hidden;display:flex;flex-direction:column}
+.p .pimg{position:relative;aspect-ratio:4/3;background:#e5eef0}
+.p .pimg img{width:100%;height:100%;object-fit:cover;display:block}
+.p .pn{position:absolute;top:12px;inset-inline-start:12px;background:var(--teal);color:#fff;font-weight:700;font-size:14px;border-radius:8px;padding:2px 10px}
+.p .pb{padding:18px 20px 22px}
 .p h3{font-size:18.5px;margin:6px 0 6px;display:flex;gap:8px;align-items:center}
 .p h3 .ico{color:#DC2626}
 .p p{font-size:15.5px}
@@ -231,7 +234,7 @@ footer p{font-size:15.5px;margin-top:14px;max-width:300px;color:#D6E5E8}
   .w,.s{padding:20px}
   .w{display:grid;grid-template-columns:50px 1fr;column-gap:14px}
   .w .wi{width:50px;height:50px;margin:0;grid-row:span 2}
-  .p{padding:22px 18px 18px}
+  .p .pb{padding:16px 16px 18px}
   .pgrid{gap:22px}
   .pbar .btn{flex:1 1 100%}
   .cbox{padding:30px 22px;border-radius:22px}
@@ -342,7 +345,7 @@ footer p{font-size:15.5px;margin-top:14px;max-width:300px;color:#D6E5E8}
 
 <section class="probs" id="problems"><div class="wrap">
   <div class="head c"><span class="tag">مشاكل يواجهها عملاؤنا</span><h2>مشاكل <span>السبليت</span> اللي تواجهك</h2><p>لو لاحظت وحدة من هذي المشاكل، مكيفك يحتاج صيانة.</p></div>
-  <div class="pgrid"><div class="p"><span class="pn">01</span><h3><svg class="ico"><use href="#i-alert"/></svg> المكيف يشتغل وما يبرد</h3><p>نقص فريون أو فلاتر مسدودة أو كمبروسر ضعيف.</p></div><div class="p"><span class="pn">02</span><h3><svg class="ico"><use href="#i-alert"/></svg> تسريب ماء من الداخلية</h3><p>انسداد خرطوم التصريف أو ميلان الوحدة.</p></div><div class="p"><span class="pn">03</span><h3><svg class="ico"><use href="#i-alert"/></svg> صوت عالي أو طقطقة</h3><p>مروحة أو قاعدة مرتخية أو كمبروسر يحتاج فحص.</p></div><div class="p"><span class="pn">04</span><h3><svg class="ico"><use href="#i-alert"/></svg> رائحة كريهة</h3><p>تراكم غبار وبكتيريا داخل الوحدة.</p></div><div class="p"><span class="pn">05</span><h3><svg class="ico"><use href="#i-alert"/></svg> يفصل ويشتغل لحاله</h3><p>مشكلة في الحساس أو الكارت أو الكهرباء.</p></div><div class="p"><span class="pn">06</span><h3><svg class="ico"><use href="#i-alert"/></svg> فاتورة كهرباء عالية</h3><p>المكيف يشتغل بجهد أكبر بسبب الأوساخ.</p></div></div>
+  <div class="pgrid"><div class="p"><div class="pimg"><img src="images/acp-06.webp" alt="المكيف يشتغل وما يبرد" loading="lazy" width="800" height="600"><span class="pn">01</span></div><div class="pb"><h3><svg class="ico"><use href="#i-alert"/></svg> المكيف يشتغل وما يبرد</h3><p>نقص فريون أو فلاتر مسدودة أو كمبروسر ضعيف.</p></div></div><div class="p"><div class="pimg"><img src="images/acp-07.webp" alt="تسريب ماء من الداخلية" loading="lazy" width="800" height="600"><span class="pn">02</span></div><div class="pb"><h3><svg class="ico"><use href="#i-alert"/></svg> تسريب ماء من الداخلية</h3><p>انسداد خرطوم التصريف أو ميلان الوحدة.</p></div></div><div class="p"><div class="pimg"><img src="images/acp-17.webp" alt="صوت عالي أو طقطقة" loading="lazy" width="800" height="600"><span class="pn">03</span></div><div class="pb"><h3><svg class="ico"><use href="#i-alert"/></svg> صوت عالي أو طقطقة</h3><p>مروحة أو قاعدة مرتخية أو كمبروسر يحتاج فحص.</p></div></div><div class="p"><div class="pimg"><img src="images/acp-24.webp" alt="رائحة كريهة" loading="lazy" width="800" height="600"><span class="pn">04</span></div><div class="pb"><h3><svg class="ico"><use href="#i-alert"/></svg> رائحة كريهة</h3><p>تراكم غبار وبكتيريا داخل الوحدة.</p></div></div><div class="p"><div class="pimg"><img src="images/acp-11.webp" alt="يفصل ويشتغل لحاله" loading="lazy" width="800" height="600"><span class="pn">05</span></div><div class="pb"><h3><svg class="ico"><use href="#i-alert"/></svg> يفصل ويشتغل لحاله</h3><p>مشكلة في الحساس أو الكارت أو الكهرباء.</p></div></div><div class="p"><div class="pimg"><img src="images/acp-20.webp" alt="فاتورة كهرباء عالية" loading="lazy" width="800" height="600"><span class="pn">06</span></div><div class="pb"><h3><svg class="ico"><use href="#i-alert"/></svg> فاتورة كهرباء عالية</h3><p>المكيف يشتغل بجهد أكبر بسبب الأوساخ.</p></div></div></div>
   <div class="pbar"><div class="t"><span class="pi"><svg class="ico"><use href="#i-check"/></svg></span><div><b>الحل؟ خلّها علينا</b><span>فنيين متخصصين يحددون العطل ويصلحونه من أول زيارة، وعلى الضمان.</span></div></div><a href="#" class="btn btn-org js-call"><svg class="ico flip"><use href="#i-phone"/></svg> اتصل <span dir="ltr">05XXXXXXXX</span></a></div>
 </div></section>
 
