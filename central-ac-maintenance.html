@@ -6,13 +6,14 @@
 <title>صيانة التكييف المركزي للبيوت والمكاتب | برودة جدة للتكييف</title>
 <meta name="description" content="صيانة التكييف المركزي: صيانة دورية، تنظيف الوحدات، فحص الكمبروسرات والفريون، وإصلاح الأعطال للبيوت والفلل والمحلات والمكاتب.">
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18547146820"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18558685838"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'AW-18547146820');
+  gtag('config', 'AW-18558685838');
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -412,13 +413,19 @@ document.querySelectorAll('.js-wa').forEach(function(a){a.href='https://wa.me/'+
 </script>
 <!-- Google Ads conversion (call + WhatsApp) -->
 <script>
-document.addEventListener('click', function (e) {
-  var a = e.target.closest('a'); if (!a) return;
-  var h = a.getAttribute('href') || '';
-  if (h.indexOf('tel:') > -1 || h.indexOf('wa.me') > -1) {
-    gtag('event', 'conversion', {'send_to': 'AW-18547146820/b5G0CL-9lq8dEMSA_ItF'});
-  }
-});
+  window.addEventListener('load', function() {
+    jQuery('[href*="tel:"]').click(function() {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18558685838/PydeCOjE8rIdEI6lvJFF'
+      });
+    });
+
+    jQuery('[href*="wa.me"]').click(function() {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18558685838/PydeCOjE8rIdEI6lvJFF'
+      });
+    });
+  });
 </script>
 </body>
 </html>
