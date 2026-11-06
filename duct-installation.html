@@ -410,13 +410,17 @@ var PHONE='966555256820';
 document.querySelectorAll('.js-call').forEach(function(a){a.href='tel:+'+PHONE;});
 document.querySelectorAll('.js-wa').forEach(function(a){a.href='https://wa.me/'+PHONE;a.target='_blank';a.rel='noopener';});
 </script>
-<!-- Google Ads conversion (call + WhatsApp) -->
+<!-- Google Ads conversion (Call + WhatsApp) -->
 <script>
 document.addEventListener('click', function (e) {
-  var a = e.target.closest('a'); if (!a) return;
+  var a = e.target.closest('a');
+  if (!a) return;
+
   var h = a.getAttribute('href') || '';
   if (h.indexOf('tel:') > -1 || h.indexOf('wa.me') > -1) {
-    gtag('event', 'conversion', {'send_to': 'AW-18547146820/b5G0CL-9lq8dEMSA_ItF'});
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18558685838/PydeCOjE8rIdEI6lvJFF'
+    });
   }
 });
 </script>
